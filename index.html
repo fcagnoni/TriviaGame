@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Trivia thing</title>
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="quiz">
+  <h1>1 Minute Denver Trivia!</h1>
+
+  <form onsubmit="submitForm(); return false;">
+    <h2 id="countDown">60</h2>
+
+
+    <div id="q1" data-answer="South Platte Valley" class="question">
+      <p>Denver is located within what geographic feature?</p>
+      <input type="radio" id="q1_true" name="q1_radio" value="South Platte Valley" required>
+      <label for="q1_true">South Platte Valley</label>
+      <input type="radio" id="q1_false" name="q1_radio" value="Cherry Creek Valley">
+      <label for="q1_false">Cherry Creek Valley</label>
+    </div>
+
+    <div id="q2" data-answer="Wells Fargo Center" class="question">
+      <p>What is the real name of the "Typewriter Building"?</p>
+      <input type="radio" id="q2_false" name="q2_radio" value="1st Bank Building" required>
+      <label for="q2_false">1st Bank Building</label>
+      <input type="radio" id="q2_true" name="q2_radio" value="Wells Fargo Center">
+      <label for="q2_true">Wells Fargo Center</label>
+    </div>
+
+    <div id="q3" data-answer="Stegosaurus" class="question">
+      <p>What is the state dinosaur of Colorado?</p>
+      <input type="radio" id="q3_false" name="q3_radio" value="Triceratops" required>
+      <label for="q3_false">Triceratops</label>
+      <input type="radio" id="q3_true" name="q3_radio" value="Stegosaurus">
+      <label for="q3_true">Stegosaurus</label>
+    </div>
+
+    <div id="q4" data-answer="James W. Denver" class="question">
+      <p>Who is Denver named after?</p>
+      <input type="radio" id="q4_false" name="q4_radio" value="John Denver" required>
+      <label for="q4_false">John Denver</label>
+      <input type="radio" id="q4_true" name="q4_radio" value="James W. Denver">
+      <label for="q4_true">James W. Denver</label>
+    </div>
+
+    <div id="q5" data-answer="yes" class="question">
+      <p>Is the song "Rocky Mountain High" an official state song of Colorado?</p>
+      <input type="radio" id="q5_true" name="q5_radio" value="yes" required>
+      <label for="q5_true">yes</label>
+      <input type="radio" id="q5_false" name="q5_radio" value="no">
+      <label for="q5_false">no</label>
+    </div>
+
+    <h2 id=countDownOver>Boo! You ran out of time!</h2>
+
+    <h2 id=results></h2>
+
+
+
+
+
+
+
+
+    <button id="submit" type="submit">Submit</button>
+
+
+
+
+  </form>
+</div>
+  <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
